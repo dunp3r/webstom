@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoreDev | Forja tu Presencia Web</title>
+    <!-- Tailwind CSS vía CDN (modo JIT) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="La forja donde tus ideas web cobran vida. Plantillas responsivas, hosting seguro y despliegue con un clic." />
+    <!-- Favicon provisional -->
+    <link rel="icon" href="https://placehold.co/32x32" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-fira.css">
+    <link rel="stylesheet" href="css/font-robot.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS + theme -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css">
+    <script src="https://unpkg.com/heroicons@2.1.0/dist/heroicons.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body class="overflow-x-hidden font-sans text-gray-800 antialiased bg-gradient-to-br from-indigo-600 to-purple-600">
+
+   <!-- ================================= NAVBAR ================================= -->
+<nav id="navbar" class="transition-all duration-300 bg-transparent text-white backdrop-blur-lg supports-backdrop-blur:bg-white/30 sticky top-0 z-50 rounded-b-3xl md:rounded-none">
+
+
+  <div class="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between md:justify-start relative">
+  
+  <!-- LOGO -->
+  <a id="site-logo" href="index.html" class="flex items-center gap-2 text-4xl font-bold text-white transition-transform duration-200 hover:scale-105 active:scale-95">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 6v6l4 2" />
+  </svg>
+  ClaroSitio
+</a>
+
+
+  <!-- MENÚ DESKTOP -->
+<div class="hidden md:flex items-center gap-6 ml-6">
+  <div class="h-8 w-px bg-gray-300"></div>
+  <ul class="flex gap-8 text-xl" style="font-family: 'Roboto Flex', sans-serif;">
+
+    
+    <li class="flex items-center gap-2 nav-link">
+      <!-- Icono: engranaje/servicio -->
+      <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0M8 16a4 4 0 0 0-4 4h8.05v2H2v-2a6 6 0 0 1 6-6h4v2zm11.5-3.25v1.376c.715.184 1.352.56 1.854 1.072l1.193-.689l1 1.732l-1.192.688a4 4 0 0 1 0 2.142l1.192.688l-1 1.732l-1.193-.689a4 4 0 0 1-1.854 1.072v1.376h-2v-1.376a4 4 0 0 1-1.854-1.072l-1.193.689l-1-1.732l1.192-.688a4 4 0 0 1 0-2.142l-1.192-.688l1-1.732l1.193.688a4 4 0 0 1 1.854-1.071V12.75zm-2.751 4.283a2 2 0 0 0-.25.967c0 .35.091.68.25.967l.036.063a2 2 0 0 0 3.43 0l.036-.063c.159-.287.249-.616.249-.967c0-.35-.09-.68-.249-.967l-.036-.063a2 2 0 0 0-3.43 0z"/></svg>
+      <a href="index.html#features" class="">Servicios</a>
+    </li>
+
+    <li class="flex items-center gap-2 nav-link">
+      <!-- Icono: moneda/precio -->
+      <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 384v1280H128v-256H0V256h1792v128zm-512 0q0 27 10 50t27 40t41 28t50 10V384zM128 512q27 0 50-10t40-27t28-41t10-50H128zm0 512q53 0 99 20t82 55t55 81t20 100h1024q0-53 20-99t55-82t81-55t100-20V640q-53 0-99-20t-82-55t-55-81t-20-100H384q0 53-20 99t-55 82t-81 55t-100 20zm1536 128q-27 0-50 10t-40 27t-28 41t-10 50h128zM128 1280h128q0-27-10-50t-27-40t-41-28t-50-10zm1792-768h-128v896H256v128h1664zM448 896q-26 0-45-19t-19-45t19-45t45-19t45 19t19 45t-19 45t-45 19m896 0q-26 0-45-19t-19-45t19-45t45-19t45 19t19 45t-19 45t-45 19m-448 256q-53 0-99-20t-82-55t-55-81t-20-100V768q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100v128q0 53-20 99t-55 82t-81 55t-100 20M768 896q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50V768q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50z"/></svg>
+      <a href="index.html#pricing" class="">Precios</a>
+    </li>
+
+    <li class="flex items-center gap-2 nav-link">
+      <!-- Icono: correo/contacto -->
+    <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2.2 2L16 14.78L6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z"/></svg>
+      <a href="index.html#contact" class="">Contacto</a>
+    </li>
+
+    <li class="flex items-center gap-2 nav-link">
+      <!-- Icono: pregunta/FAQ -->
+    <svg class="relative -top-[2px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M10.125 8.875a1.875 1.875 0 1 1 2.828 1.615c-.475.281-.953.708-.953 1.26V13"/><circle cx="12" cy="16" r="1" fill="currentColor"/></g></svg>
+      <a href="pages/faq.html" class="">FAQ</a>
+    </li>
+
+  </ul>
+</div>
+
+
+  <!-- BOTÓN AESTHETIC EN LA ESQUINA DERECHA -->
+    <!-- 🖱️ Botón - SOLO en escritorio y totalmente alineado a la derecha -->
+    <div id="contactBtn" class="hidden lg:block ml-auto">
+      <a
+        class="group relative inline-flex items-center overflow-hidden rounded-sm border border-current px-8 py-3 focus:ring-3 focus:outline-hidden"
+        href="#"
+      >
+        <span class="absolute -start-full transition-all group-hover:start-4">
+          <svg
+            class="size-5 shadow-sm rtl:rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </span>
+
+        <span class="text-sm font-medium transition-all group-hover:ms-4">
+          Contáctanos
+        </span>
+      </a>
+    </div>
+
+  
+
+  <!-- Botón hamburguesa -->
+  <button id="nav-toggle" class="md:hidden relative w-10 h-10 focus:outline-none group">
+    <span class="absolute top-1/2 left-1/2 w-8 h-1 bg-gray-800 rounded transform -translate-x-1/2 -translate-y-2 transition duration-300 ease-in-out group-[.open]:rotate-45 group-[.open]:translate-y-0"></span>
+    <span class="absolute top-1/2 left-1/2 w-8 h-1 bg-gray-800 rounded transform -translate-x-1/2 translate-y-2 transition duration-300 ease-in-out group-[.open]:-rotate-45 group-[.open]:translate-y-0"></span>
+  </button>
+
+</div>
+
+
+  <!-- MENÚ MÓVIL -->
+  <div id="nav-content" class="md:hidden mobile-menu-transition rounded-b-3xl overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+  <ul class="flex flex-col items-center justify-center px-4 py-4 space-y-4 font-medium text-2xl" style="font-family: 'Roboto Flex', sans-serif;">
+    <li>
+      <a href="pages/nosotros.html" class="nav-link flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </svg>
+        Nosotros
+      </a>
+    </li>
+    <li>
+      <a href="index.html#features" class="nav-link flex items-center gap-2">
+        <?xml version="1.0" encoding="UTF-8"?><!-- Icono: engranaje/servicio -->
+      <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><path fill="currentColor" d="M11.5 4a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M6 7.5a5.5 5.5 0 1 1 11 0a5.5 5.5 0 0 1-11 0M8 16a4 4 0 0 0-4 4h8.05v2H2v-2a6 6 0 0 1 6-6h4v2zm11.5-3.25v1.376c.715.184 1.352.56 1.854 1.072l1.193-.689l1 1.732l-1.192.688a4 4 0 0 1 0 2.142l1.192.688l-1 1.732l-1.193-.689a4 4 0 0 1-1.854 1.072v1.376h-2v-1.376a4 4 0 0 1-1.854-1.072l-1.193.689l-1-1.732l1.192-.688a4 4 0 0 1 0-2.142l-1.192-.688l1-1.732l1.193.688a4 4 0 0 1 1.854-1.071V12.75zm-2.751 4.283a2 2 0 0 0-.25.967c0 .35.091.68.25.967l.036.063a2 2 0 0 0 3.43 0l.036-.063c.159-.287.249-.616.249-.967c0-.35-.09-.68-.249-.967l-.036-.063a2 2 0 0 0-3.43 0z"/></svg>
+        Servicios
+      </a>
+    </li>
+    <li>
+      <a href="index.html#pricing" class="nav-link flex items-center gap-2">
+         <!-- Icono: moneda/precio -->
+      <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 2048 2048"><path fill="currentColor" d="M2048 384v1280H128v-256H0V256h1792v128zm-512 0q0 27 10 50t27 40t41 28t50 10V384zM128 512q27 0 50-10t40-27t28-41t10-50H128zm0 512q53 0 99 20t82 55t55 81t20 100h1024q0-53 20-99t55-82t81-55t100-20V640q-53 0-99-20t-82-55t-55-81t-20-100H384q0 53-20 99t-55 82t-81 55t-100 20zm1536 128q-27 0-50 10t-40 27t-28 41t-10 50h128zM128 1280h128q0-27-10-50t-27-40t-41-28t-50-10zm1792-768h-128v896H256v128h1664zM448 896q-26 0-45-19t-19-45t19-45t45-19t45 19t19 45t-19 45t-45 19m896 0q-26 0-45-19t-19-45t19-45t45-19t45 19t19 45t-19 45t-45 19m-448 256q-53 0-99-20t-82-55t-55-81t-20-100V768q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100v128q0 53-20 99t-55 82t-81 55t-100 20M768 896q0 27 10 50t27 40t41 28t50 10q27 0 50-10t40-27t28-41t10-50V768q0-27-10-50t-27-40t-41-28t-50-10q-27 0-50 10t-40 27t-28 41t-10 50z"/></svg>
+        Precios
+      </a>
+    </li>
+    <li>
+      <a href="index.html#features" class="nav-link flex items-center gap-2">
+         <svg class="relative -top-[1px] text-[]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2.2 2L16 14.78L6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z"/></svg>
+        Contacto
+      </a>
+    </li>
+    <li>
+      <a href="pages/faq.html" class="nav-link flex items-center gap-2">
+         <!-- Icono: pregunta/FAQ -->
+    <svg class="relative -top-[2px] text-[]" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><g fill="none"><path stroke="currentColor" stroke-width="1.5" d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M10.125 8.875a1.875 1.875 0 1 1 2.828 1.615c-.475.281-.953.708-.953 1.26V13"/><circle cx="12" cy="16" r="1" fill="currentColor"/></g></svg>
+        FAQ
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
+    <!-- ================================= HERO ================================= -->
+<header class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-1">
+  <div class="container mx-auto px-4 text-center max-w-3xl">
+
+    <!-- 🟣 Sección centrada y responsiva -->
+    <section class="min-h-screen flex items-center justify-center px-4 py-16 sm:py-24 lg:py-32">
+      <div class="max-w-prose text-center">
+            <h1 class="text-4xl font-bold sm:text-7xl text-white">
+         Tu sitio web desde
+          <strong class="text-yellow-300" id="price">S/250</strong> Sin complicaciones.
+        </h1> 
+
+        <p class="mt-4 text-lg sm:text-xl text-gray-100" style="font-family: 'Roboto Flex', sans-serif;">
+          Tu negocio en internet, bonito y sin drama. Alta calidad, bajo precio. Así de simple.
+        </p>
+
+        <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+         
+
+          <a
+  class="group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-indigo-700 focus:ring-3 focus:outline-hidden justify-center"
+  href="https://wa.link/o0zdho" target="_blank"
+>
+  <span class="absolute -start-full transition-all group-hover:start-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31c-.22.25-.87.86-.87 2.07c0 1.22.89 2.39 1 2.56c.14.17 1.76 2.67 4.25 3.73c.59.27 1.05.42 1.41.53c.59.19 1.13.16 1.56.1c.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27c-.25-.14-1.47-.74-1.69-.82c-.23-.08-.37-.12-.56.12c-.16.25-.64.81-.78.97c-.15.17-.29.19-.53.07c-.26-.13-1.06-.39-2-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.12-.24-.01-.39.11-.5c.11-.11.27-.29.37-.44c.13-.14.17-.25.25-.41c.08-.17.04-.31-.02-.43c-.06-.11-.56-1.35-.77-1.84c-.2-.48-.4-.42-.56-.43c-.14 0-.3-.01-.47-.01"/></svg>
+  </span>
+
+  <span class="text-base font-medium transition-all group-hover:ms-4" style="font-family: 'Roboto Flex', sans-serif;"> Contáctanos </span>
+</a>
+          <a
+  class="group relative inline-flex items-center overflow-hidden rounded border border-white px-8 py-3 text-white focus:ring-3 focus:outline-hidden justify-center hover:bg-white hover:text-indigo-700"
+  href="#pricing"
+>
+  <span class="absolute -start-full transition-all group-hover:start-4 ">
+   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="currentColor" d="M128 88a40 40 0 1 0 40 40a40 40 0 0 0-40-40m0 64a24 24 0 1 1 24-24a24 24 0 0 1-24 24m112-96H16a8 8 0 0 0-8 8v128a8 8 0 0 0 8 8h224a8 8 0 0 0 8-8V64a8 8 0 0 0-8-8m-46.35 128H62.35A56.78 56.78 0 0 0 24 145.65v-35.3A56.78 56.78 0 0 0 62.35 72h131.3A56.78 56.78 0 0 0 232 110.35v35.3A56.78 56.78 0 0 0 193.65 184M232 93.37A40.8 40.8 0 0 1 210.63 72H232ZM45.37 72A40.8 40.8 0 0 1 24 93.37V72ZM24 162.63A40.8 40.8 0 0 1 45.37 184H24ZM210.63 184A40.8 40.8 0 0 1 232 162.63V184Z"/></svg>
+  </span>
+
+  <span class="text-base font-medium transition-all group-hover:ms-4" style="font-family: 'Roboto Flex', sans-serif;"> Ver Precios </span>
+</a>
+        </div>
+      </div>
+    </section>
+
+   
+
+  </div>
+</header>
+
+
+ <!-- ========= PORTAFOLIO – SCROLL HORIZONTAL ========== -->
+<section class="py-16 bg-gray-50 relative">
+  <div class="container mx-auto px-4">
+    <h2 class="text-center text-gray-900 tracking-widest text-sm md:text-base font-semibold uppercase mb-10 text-shadow-lg" style="font-family: 'Roboto Flex', sans-serif;">
+      Proyectos que hablan por nosotros
+    </h2>
+
+    <div class="relative">
+      <!-- Flechas solo visibles en escritorio -->
+      <button id="leftArrow" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2 hover:bg-gray-200 transition hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button id="rightArrow" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2 hover:bg-gray-200 transition hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Carrusel -->
+      <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide space-x-6 md:scrollbar-auto px-1">
+        
+        <!-- Tarjeta de proyecto (repite este bloque para más proyectos) -->
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://www.gruponw.com/nwlib6/includes/phpthumb/phpThumb.php?src=/imagenes/por-que-tener-una-pagina-web.png&w=700&f=webp" alt="Landing Page" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">Landing Page<br />Startup A</p>
+          </div>
+        </div>
+
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://www.comparapps.com/wp-content/uploads/2020/04/que-es-una-pagina-web.png" alt="E-commerce" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">E-commerce<br />Cliente B</p>
+          </div>
+        </div>
+
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://www.godaddy.com/resources/latam/wp-content/uploads/hosting-1.jpg" alt="Dashboard" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">Dashboard<br />Cliente C</p>
+          </div>
+        </div>
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://sergioescriba.com/wp-content/uploads/2019/01/tipos-clasificacion-paginas-web.png" alt="Dashboard" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">Dashboard<br />Cliente D</p>
+          </div>
+        </div>
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://www.marketerdigital.com.mx/wp-content/uploads/2021/12/tipos-de-paginas-web-mas-populares.png" alt="Dashboard" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">Dashboard<br />Cliente E</p>
+          </div>
+        </div>
+        <div class="min-w-[100%] md:min-w-[33.3333%] snap-start shrink-0 relative group overflow-hidden rounded-xl shadow-lg">
+          <img src="https://deyiseo.com/wp-content/uploads/2019/10/tipos-de-pagina-web.jpg" alt="Dashboard" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div class="absolute inset-0 flex items-center justify-center bg-indigo-900/80 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300">
+            <p class="text-white text-lg font-semibold px-4 text-center">Dashboard<br />Cliente E</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- ================================= FEATURES ================================= -->
+    <section id="features" class="py-20 bg-[#F9FAFB] -mt-px">
+      <div class="container mx-auto px-4">
+        <h2 class="text-shadow-lg/20 text-3xl md:text-4xl text-center mb-12 text fira-sans-light font-medium">Nuestros Servicios</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Feature Card -->
+          <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md mb-4 p1 bg-indigo-100 ">
+              <!-- Icon -->
+              <svg fill="#4F46E5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.51211712,15 L8.17190229,15 C8.05949197,14.0523506 8,13.0444554 8,12 C8,10.9555446 8.05949197,9.94764942 8.17190229,9 L3.51211712,9 C3.18046266,9.93833678 3,10.9480937 3,12 C3,13.0519063 3.18046266,14.0616632 3.51211712,15 L3.51211712,15 Z M3.93551965,16 C5.12590433,18.3953444 7.35207678,20.1851177 10.0280093,20.783292 C9.24889451,19.7227751 8.65216136,18.0371362 8.31375067,16 L3.93551965,16 L3.93551965,16 Z M20.4878829,15 C20.8195373,14.0616632 21,13.0519063 21,12 C21,10.9480937 20.8195373,9.93833678 20.4878829,9 L15.8280977,9 C15.940508,9.94764942 16,10.9555446 16,12 C16,13.0444554 15.940508,14.0523506 15.8280977,15 L20.4878829,15 L20.4878829,15 Z M20.0644804,16 L15.6862493,16 C15.3478386,18.0371362 14.7511055,19.7227751 13.9719907,20.783292 C16.6479232,20.1851177 18.8740957,18.3953444 20.0644804,16 L20.0644804,16 Z M9.18440269,15 L14.8155973,15 C14.9340177,14.0623882 15,13.0528256 15,12 C15,10.9471744 14.9340177,9.93761183 14.8155973,9 L9.18440269,9 C9.06598229,9.93761183 9,10.9471744 9,12 C9,13.0528256 9.06598229,14.0623882 9.18440269,15 L9.18440269,15 Z M9.3349823,16 C9.85717082,18.9678295 10.9180729,21 12,21 C13.0819271,21 14.1428292,18.9678295 14.6650177,16 L9.3349823,16 L9.3349823,16 Z M3.93551965,8 L8.31375067,8 C8.65216136,5.96286383 9.24889451,4.27722486 10.0280093,3.21670804 C7.35207678,3.81488234 5.12590433,5.60465556 3.93551965,8 L3.93551965,8 Z M20.0644804,8 C18.8740957,5.60465556 16.6479232,3.81488234 13.9719907,3.21670804 C14.7511055,4.27722486 15.3478386,5.96286383 15.6862493,8 L20.0644804,8 L20.0644804,8 Z M9.3349823,8 L14.6650177,8 C14.1428292,5.03217048 13.0819271,3 12,3 C10.9180729,3 9.85717082,5.03217048 9.3349823,8 L9.3349823,8 Z M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z"></path> </g></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Diseño de páginas Web</h3>
+            <p class="text-gray-600 roboto-flex">Páginas modernas, rápidas y adaptadas a cualquier dispositivo.
+                                    Impulsa tu presencia online con una web que vende.
+                                    Código limpio, diseño fino y enfoque en resultados.
+            </p>
+          </div>
+          <!-- Feature Card -->
+          <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 p-1 mb-4">
+            <svg fill="#4F46E5" height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395 395" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 395 395"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="m43.503,56.519c-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.33-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.33 2.2-5.3 0-1.97-0.8-3.91-2.2-5.3-1.4-1.4-3.33-2.2-5.3-2.2z"></path> <path d="m72.803,58.719c-1.4-1.4-3.33-2.2-5.3-2.2-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.33-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.33 2.2-5.3 0-1.97-0.8-3.91-2.2-5.3z"></path> <path d="m43.503,189.999c-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.33-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.33 2.2-5.3 0-1.97-0.8-3.91-2.2-5.3-1.4-1.4-3.33-2.2-5.3-2.2z"></path> <path d="m72.803,192.199c-1.4-1.4-3.33-2.2-5.3-2.2-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.33-2.19,5.3 0,1.98 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.32 2.2-5.3 0-1.97-0.8-3.91-2.2-5.3z"></path> <path d="m43.503,323.479c-1.98,0-3.91,0.8-5.31,2.2-1.39,1.39-2.19,3.33-2.19,5.3 0,1.98 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.33 2.2-5.3 0-1.97-0.8-3.9-2.2-5.3-1.4-1.4-3.33-2.2-5.3-2.2z"></path> <path d="m72.803,325.679c-1.4-1.4-3.33-2.2-5.3-2.2-1.98,0-3.91,0.8-5.31,2.2-1.39,1.4-2.19,3.33-2.19,5.3 0,1.97 0.8,3.91 2.19,5.3 1.4,1.4 3.33,2.2 5.31,2.2 1.97,0 3.9-0.8 5.3-2.2 1.4-1.39 2.2-3.32 2.2-5.3 0-1.97-0.8-3.91-2.2-5.3z"></path> <path d="M387.5,123.038c4.143,0,7.5-3.358,7.5-7.5V12.5c0-4.142-3.357-7.5-7.5-7.5H7.5C3.358,5,0,8.358,0,12.5v103.038 c0,4.142,3.358,7.5,7.5,7.5h21.87v15.443H7.5c-4.142,0-7.5,3.358-7.5,7.5v103.038c0,4.142,3.358,7.5,7.5,7.5h21.87v15.443H7.5 c-4.142,0-7.5,3.358-7.5,7.5V382.5c0,4.142,3.358,7.5,7.5,7.5h380c4.143,0,7.5-3.358,7.5-7.5V279.462c0-4.142-3.357-7.5-7.5-7.5 h-21.87v-15.443h21.87c4.143,0,7.5-3.358,7.5-7.5V145.981c0-4.142-3.357-7.5-7.5-7.5h-21.87v-15.443H387.5z M380,108.038h-39.166 V20H380V108.038z M286.823,108.038V20h39.011v88.038H286.823z M15,20h256.823v88.038H15V20z M15,153.481h256.823v88.038H15V153.481 z M286.823,241.519v-88.038h39.011v88.038H286.823z M15,286.962h256.823V375H15V286.962z M325.834,286.962V375h-39.011v-88.038 H325.834z M380,375h-39.166v-88.038H380V375z M350.63,271.962H44.37v-15.443h306.26V271.962z M380,241.519h-39.166v-88.038H380 V241.519z M350.63,138.481H44.37v-15.443h306.26V138.481z"></path> </g> </g></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Hosting seguro y escalable</h3>
+            <p class="text-gray-600 roboto-flex">
+              Alojamiento seguro y veloz para tu web, sin dolores de cabeza.
+              SSL, backups diarios y uptime garantizado.
+              Te lo entrego todo listo, ¡tú solo preocupate por los clientes!
+            </p>
+          </div>
+          <!-- Feature Card -->
+          <div class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center justify-center h-12 w-12 rounded-md mb-4 bg-indigo-100 p-1 rounded-full">
+              <svg height="50px" width="50px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#4F46E5" stroke="#4F46E5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#4F46E5;} </style> <g> <path class="st0" d="M435.244,391.19c32.805-41.18,52.518-93.432,52.503-150.118c0.015-66.486-27.029-126.93-70.608-170.464 C373.593,27.021,313.149-0.016,246.667,0C180.181-0.016,119.742,27.021,76.2,70.608C32.616,114.142,5.576,174.586,5.591,241.072 C5.576,307.55,32.616,367.994,76.2,411.536c43.542,43.587,103.982,70.624,170.468,70.608c50.948,0.016,98.312-15.91,137.281-42.94 L456.756,512l49.653-49.653L435.244,391.19z M378.508,372.916c-33.826,33.773-80.267,54.591-131.841,54.606 c-51.574-0.015-98.015-20.833-131.845-54.606c-33.784-33.834-54.595-80.271-54.61-131.844 c0.015-51.574,20.826-98.011,54.61-131.844c33.83-33.78,80.271-54.591,131.845-54.606c51.574,0.015,98.014,20.826,131.841,54.606 c33.791,33.833,54.602,80.271,54.617,131.844C433.11,292.646,412.299,339.082,378.508,372.916z"></path> <path class="st0" d="M155.926,235.105l-5.696-0.792c-14.558-2.058-19.782-7.117-19.782-14.555c0-8.389,6.012-14.402,16.932-14.402 c9.018,0,17.088,2.691,25.794,8.39c0.789,0.473,1.582,0.313,2.214-0.48l7.597-11.704c0.633-0.953,0.473-1.585-0.32-2.218 c-8.542-6.484-21.359-10.76-34.809-10.76c-22.156,0-36.398,12.977-36.398,32.44c0,17.877,11.712,27.852,32.44,30.694l5.696,0.792 c14.875,2.058,19.622,7.125,19.622,14.875c0,9.022-7.437,15.507-20.255,15.507c-12.024,0-22.312-5.852-29.273-11.392 c-0.632-0.632-1.581-0.632-2.214,0.16l-9.811,11.392c-0.632,0.792-0.316,1.737,0.316,2.378 c8.386,7.909,23.733,14.234,39.561,14.234c26.739,0,40.509-14.234,40.509-33.384C188.049,247.762,176.652,237.956,155.926,235.105z "></path> <path class="st0" d="M275.566,190.322h-67.408c-0.949,0-1.581,0.632-1.581,1.585v104.435c0,0.953,0.632,1.585,1.581,1.585h67.408 c0.953,0,1.585-0.632,1.585-1.585v-13.602c0-0.952-0.632-1.585-1.585-1.585h-49.368l-0.949-0.953V252.99l0.949-0.952h41.614 c0.953,0,1.586-0.633,1.586-1.586v-13.609c0-0.945-0.633-1.577-1.586-1.577h-41.614l-0.949-0.953v-26.266l0.949-0.945h49.368 c0.953,0,1.585-0.64,1.585-1.585v-13.61C277.151,190.954,276.519,190.322,275.566,190.322z"></path> <path class="st0" d="M334.448,188.584c-18.514,0-32.439,8.863-37.975,25.954c-2.218,6.645-2.85,12.658-2.85,29.589 c0,16.932,0.632,22.944,2.85,29.589c5.536,17.092,19.462,25.947,37.975,25.947c18.677,0,32.591-8.855,38.139-25.947 c2.21-6.645,2.85-12.657,2.85-29.589c0-16.932-0.64-22.944-2.85-29.589C367.039,197.447,353.124,188.584,334.448,188.584z M354.542,268.81c-3.003,8.702-9.327,14.082-20.095,14.082c-10.6,0-16.932-5.38-19.938-14.082 c-1.265-3.955-1.898-9.495-1.898-24.682c0-15.355,0.633-20.734,1.898-24.69c3.007-8.702,9.339-14.082,19.938-14.082 c10.768,0,17.092,5.38,20.095,14.082c1.265,3.955,1.904,9.335,1.904,24.69C356.447,259.315,355.807,264.854,354.542,268.81z"></path> </g> </g></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">SEO & Análisis en Tiempo Real</h3>
+            <p class="text-gray-600 roboto-flex">
+              Tu página posicionada en Google desde el primer clic.
+              Optimizaciones técnicas para cargar rápido y aparecer bien.
+              Puntuación alta en PageSpeed, análisis en tiempo real y visibilidad garantizada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------PAQUETES ---------------------------->
+    <section id="pricing" class="py-20 p-1 rounded-4x1 -mt-1 " style="background-color:#F9FAFB;">
+  <div class="container mx-auto px-4 ">
+    <h2 class="text-3xl md:text-4xl font-medium text-center mb-1 fira-sans-light">
+      Paquetes que se ajustan a tu bolsillo.
+    </h2>
+
+     <!-- PAQUETE Emprendedor-->
+  <div class="flex justify-end items-center mb-6 space-x-3">
+  <span class="text-sm font-medium text-gray-700">Moneda:</span>
+  <div id="currency-toggle" class="flex items-center space-x-1 bg-gray-200 rounded-full px-2 py-1 cursor-pointer">
+    <img src="https://flagcdn.com/w40/pe.png" alt="Soles" id="flag-pen" class="w-6 h-4 rounded shadow transition duration-200 ring-2 ring-indigo-500">
+    <img src="https://flagcdn.com/w40/us.png" alt="USD" id="flag-usd" class="w-6 h-4 rounded shadow opacity-50 transition duration-200">
+  </div>
+</div>
+
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <a
+        href="#contact"
+        class="bg-white rounded-xl shadow-md border border-transparent hover:border-[#4F46E5] hover:ring-1 hover:ring-gray-200 flex flex-col transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl "
+      >
+        <div class="p-6 border-b">
+          <h3 class="text-xl font-semibold mb-2"> Paquete <span class="text-indigo-700">[</span> Emprendedor <span class="text-indigo-700">]</span></h3>
+          <p class="text-gray-800 text-lg" style="font-family: 'Roboto Flex', sans-serif; ">La base sólida para tu presencia online. Diseñado para iniciar tu negocio con una web esencial y profesional.</p>
+         <p class="mt-4 text-5xl font-bold text-2xl font-bold text-white-600 price transition duration-300" data-pen="250" data-usd="69.99" style="font-family: 'Roboto Flex', sans-serif;">
+          S/.250 <span class="text-sm text-gray-500 font-medium whitespace-nowrap">/Pago único</span>
+        </p>
+
+        </div>
+        <ul class="flex-1 p-6 space-y-3" style="font-family: 'Roboto Flex', sans-serif;">
+          <li>Página One-Page Profesional.</li>
+          <li>Diseño Responsivo (se adapta a móviles).</li>
+          <li>Formulario de Contacto.</li>
+          <li>Botones de whatsapp y redes sociales.</li>
+          <li>Galería de Imágenes básica.</li>
+          <li>Optimización SEO básica</li>
+          <li>[ <strong>Dominio .com</strong> ]</li>
+          <li>Certificado Digital SSL/TLS</li>
+          <li>Hosting y dominio por 1 año</li>
+          <li><strong>Entrega: 7 días hábiles</strong></li>
+          
+        </ul>
+        <div class="p-6 border-t">
+          <span class="w-full text-xl block text-center px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">Contratar</span>
+        </div>
+      </a>
+
+              <!--  PAQUETE Profesional -->
+      <a
+  href="#contact"
+  class="bg-indigo-600 text-white rounded-xl shadow-lg transform md:scale-105 transition-all duration-300 hover:scale-[1.07] hover:shadow-2xl border border-transparent hover:border-white hover:ring-2 hover:ring-white/40 flex flex-col "
+>
+  <div class="p-6 border-b border-indigo-500">
+    <h3 class="text-xl font-semibold mb-2">Paquete <span class="text-white">[</span> Turbo Web <span class="text-white">]</span></h3>
+    <p class="text-indigo-100 text-lg" style="font-family: 'Roboto Flex', sans-serif;">
+      Potencia tu marca con una presencia web completa y optimizada.
+    </p>
+    <p class="mt-4 text-5xl font-bold text-white-600 price transition duration-300" data-pen="490" data-usd="135" style="font-family: 'Roboto Flex', sans-serif; ">
+      S/.450
+      <span class="text-sm text-black-500 font-medium whitespace-nowrap">/Pago único</span>
+    </p>
+  </div>
+  <ul class="flex-1 p-6 space-y-3" style="font-family: 'Roboto Flex', sans-serif;">
+    <li>Página Web Multi-sección (Hasta <strong>4</strong> Secciones)</li>
+    <li>Diseño Moderno y Responsivo (se adapta a móviles).</li>
+    <li>Botones de whatsapp y redes sociales.</li>
+    <li>Optimización de Velocidad y Seguridad Básica.</li>
+    <li>Galería de Imágenes Y Videos.</li>
+    <li>Mapa de ubicación ( Google Maps ).</li>
+    <li>Optimización SEO Comercial</li>
+    <li>[ <strong>Dominio .com</strong> ]</li>
+    <li>Certificado Digital SSL/TLS</li>
+    <li>Hosting y dominio por 1 año</li>
+    <li><strong>Entrega: 14 días hábiles</strong></li>
+  </ul>
+  <div class="p-6 border-t border-indigo-500">
+    <span
+      class="w-full text-lg block text-center px-4 py-2 bg-white text-indigo-700 rounded-md hover:bg-gray-100 transition font-medium"
+    >
+      Contratar
+    </span>
+  </div>
+</a>
+
+
+
+              <!-- PLAN Empresarial -->
+      <a
+        href="#contact"
+        class="bg-white rounded-xl shadow-md border border-transparent hover:border-[#4F46E5] hover:ring-1 hover:ring-gray-200 flex flex-col transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl "
+      >
+
+        <div class="p-6 border-b">
+          <h3 class="text-xl font-semibold mb-2">Paquete <span class="text-indigo-700">[</span> Pro Presencia <span class="text-indigo-700">]</span></h3>
+          <p class="text-gray-800 text-lg" style="font-family: 'Roboto Flex', sans-serif;">
+               La solución digital integral para negocios que buscan liderar el mercado y convertir visitas en clientes.
+          </p>
+           <p class="mt-4 text-5xl font-bold text-2xl font-bold text-black-600 price transition duration-300" data-pen="650" data-usd="180" style="font-family: 'Roboto Flex', sans-serif; ">S/.600<span class="text-sm text-gray-500 font-medium whitespace-nowrap">/Pago único</span></p>
+        </div>
+        <ul class="flex-1 p-6 space-y-3" style="font-family: 'Roboto Flex', sans-serif;">
+          <li>Todo lo del Plan Profesional <strong>+</strong></li>
+          <li>Hasta 7 Secciones.</li>
+          <li>Diseño Premium y Experiencia de Usuario (UX) Mejorada.</li>
+          <li>Animaciones e interactividad en todas las URLs de su website.</li>
+          <li>Hosting y dominio por 1 año.</li>
+          <li>Optimización SEO Avanzado</li>
+          <li>[ <strong>Dominio .com</strong> ]</li>
+          <li><li>Certificado Digital SSL/TLS.</li></li>
+          <li>Soporte Prioritario por 6 meses.</li>
+          <li><strong>Entrega: 20 días hábiles</strong></li>
+        </ul>
+        <div class="p-6 border-t">
+          <span
+            class="w-full text-lg block text-center px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition"
+            >Contratar</span
+          >
+        </div>
+      </a>
+    </div>
+        <div class="mt-4 pt-8 flex justify-center">
+          <div class="relative group inline-block">
+            <a href="pages/faq.html"
+              class="inline-flex items-center gap-2 text-indigo-600 text-base transition-transform duration-200 hover:scale-105 active:scale-95 font-medium roboto-flex">
+              Preguntas Frecuentes
+              <img src="assets/faq.svg" alt="FAQ icono" class="w-5 h-5 md:w-6 md:h-6" />
+            </a>
+
+            <!-- Línea animada única -->
+            <span class="pointer-events-none absolute -bottom-1 left-1/2 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full transform -translate-x-1/2"></span>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+    <!-- ================================= CTA ================================= -->
+<section class="relative bg-indigo-700 text-white overflow-hidden">
+  <!-- ✅ SVG decorativo superior sin línea -->
+  <div class="absolute top-[-1px] left-0 w-full z-20">
+    <svg 
+      class="w-full h-[300px] block" 
+      viewBox="0 0 1440 320" 
+      preserveAspectRatio="none" 
+      xmlns="http://www.w3.org/2000/svg">
+      <path 
+        fill="#F9FAFB" 
+        d="M0,160 C480,320 960,0 1440,160 L1440,0 L0,0 Z"
+      ></path>
+    </svg>
+
+  </div>
+
+  <!-- ✅ Contenido en primer plano -->
+  <div class="relative z-10 container mx-auto text-center px-4 pt-52 pb-32">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white roboto-flex" style="text-shadow: 2px 2px 2px rgba(0,0,0,0.4);">
+      ¿Listo para empezar?
+    </h2>
+    <p class="text-lg md:text-xl mb-8 text-white roboto-flex" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.4);">
+     Conectamos tu idea con el mundo, sin complicaciones.
+    </p>
+    <a href="#contact" class="inline-block px-8 py-3 rounded-md bg-white text-indigo-700 font-semibold shadow-lg transform transition-transform duration-200 hover:scale-105 active:scale-95 hover:bg-gray-200" style="font-family: 'Roboto Flex', sans-serif; ">
+      Contáctanos
+    </a>
+  </div>
+</section>
+
+
+
+    <!-- ================================= CONTACT & FOOTER ================================= -->
+    <footer id="footer" class="bg-gray-900 text-gray-300 py-12 ">
+      <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div>
+
+           <!-- LOGO -->
+    <a href="index.html" class="flex items-center gap-1 text-4xl font-bold text-indigo-600 transition-transform duration-200 hover:scale-105 active:scale-95 -ml-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 6v6l4 2" />
+      </svg>
+      ClaroSitio
+    </a>
+    <br>
+          <p class="roboto-flex">La forja de ideas digitales donde las páginas web nacen listas para conquistar internet.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3 text-xl text-[#E8E6E3]">Enlaces</h4>
+          <ul class="space-y-2 roboto-flex">
+            <li><a href="#pricing" class="hover:text-indigo-500">Precios</a></li>
+            <li><a href="#features" class="hover:text-indigo-500">Servicios</a></li>
+            <li><a href="#contact" class="hover:text-indigo-500">Contacto</a></li>
+            <li><a href="pages/faq.html" class="hover:text-indigo-500">FAQ</a></li>
+            
+          </ul>
+        </div>
+        <!-- Sección de Transparencia -->
+<div>
+  <h4 class="font-semibold mb-3 text-xl text-[#E8E6E3]">Transparencia</h4>
+  <ul class="space-y-2 roboto-flex">
+  <li><a href="#" onclick="handleLegalLink(event, 'terms')" class="hover:text-indigo-500 cursor-pointer ">Términos y Condiciones</a></li>
+  <li><a href="#" onclick="handleLegalLink(event, 'privacy')" class="hover:text-indigo-500 cursor-pointer">Políticas de Privacidad</a></li>
+  <li><a href="#" onclick="handleLegalLink(event, 'cookies')" class="hover:text-indigo-500 cursor-pointer">Política de Cookies</a></li>
+</ul>
+
+</div>
+
+<!-- Modal Legal -->
+<div id="legalModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-70 outline-none focus:outline-none"
+  tabindex="-1">
+  <div class="bg-[#121212] text-white max-w-2xl w-full mx-4 md:mx-auto rounded-lg shadow-xl p-6 relative max-h-[90vh] overflow-y-auto">
+    <button onclick="closeLegalModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-5xl">&times;</button>
+    <h2 id="modalTitle" class="text-2xl font-bold mb-2 text-center">Título</h2>
+    <p id="modalDate" class="text-sm text-center mb-4">Última actualización</p>
+    <div id="modalContent" class="space-y-4 text-sm text-gray-300"></div>
+    <div class="text-center mt-6">
+      <button onclick="closeLegalModal()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>
+        <div>
+          <h4 class="font-semibold mb-3 text-xl text-[#E8E6E3] roboto-flex">Contacto</h4>
+          <p>Email: <a href="mailto:hola@moredev.com" class="hover:text-indigo-500 roboto-flex">hola@moredev.com</a></p>
+          <p class="roboto-flex">Teléfono: +51 987 654 321</p>
+          <div class="flex space-x-4 mt-4">
+            <!-- Social media placeholders -->
+           
+            <a href="#" aria-label="LinkedIn" class="hover:text-indigo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.852-3.037-1.853 0-2.135 1.445-2.135 2.939v5.667h-3.554v-11.5h3.413v1.569h.049c.476-.9 1.637-1.852 3.37-1.852 3.602 0 4.272 2.372 4.272 5.456v6.327zM5.337 8.433c-1.144 0-2.072-.929-2.072-2.072s.928-2.072 2.072-2.072 2.072.929 2.072 2.072-.928 2.072-2.072 2.072zm1.777 12.019h-3.554v-11.5h3.554v11.5z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="hover:text-indigo-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0h-21.35C.596 0 0 .6 0 1.337v21.326C0 23.4.596 24 1.325 24h11.49v-9.294H9.692v-3.622h3.122V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.663V1.337C24 .6 23.4 0 22.675 0z"/>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center text-gray-500 text-sm roboto-flex">
+        © 2025 MoreDev Inc. | Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- ================================= JS ================================= -->
+   <!---->
+
+  <script src="js/price.js"></script>
+  <script src="js/navbar-change.js"></script>
+  <script src="js/maquina_escribir.js"></script>
+  <script src="js/burger_animation.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/funtions.js"></script> 
+  <script src="js/social_slide.js"></script>
+  <script src="js/navbar.js"></script> 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+  </body>
+</html>

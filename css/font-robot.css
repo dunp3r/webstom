@@ -1,0 +1,33 @@
+.roboto-flex {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+/* Ejemplo de estilos usando ejes variables */
+.weight-100 {
+  font-variation-settings: "wght" 100;
+}
+
+.weight-400 {
+  font-variation-settings: "wght" 400;
+}
+
+.weight-900 {
+  font-variation-settings: "wght" 900;
+}
+
+.slant-10 {
+  font-variation-settings: "wght" 400, "slnt" -10;
+}
+
+.opsz-72 {
+  font-variation-settings: "wght" 400, "opsz" 72;
+}
+
+.custom-flex {
+  font-variation-settings: 
+    "wght" 600, 
+    "opsz" 12, 
+    "slnt" -5, 
+    "GRAD" 100;
+}
+
