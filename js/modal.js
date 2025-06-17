@@ -3,25 +3,25 @@ const legalTexts = {
       title: 'Términos y Condiciones',
       date: 'Última actualización: Junio de 2025',
       content: `
-        <p>Bienvenido a www.veocreativo.pe, sitio web de propiedad de VEO CREATIVO S.A.C...</p>
+        <p>Bienvenido a www.tesco.com, sitio web de propiedad de Tesco S.A.C...</p>
         <p><strong>1. Uso del sitio web</strong><br>Este sitio tiene como objetivo brindar información sobre nuestros servicios digitales  y productos como diseño web, publicidad, dominios, hosting y más. Al acceder, usted se compromete a usar esta web únicamente con fines legales y bajo las normas aplicables.</p>
-        <p><strong>2. Propiedad intelectual</strong><br>Todo el contenido (textos, imágenes, gráficos...) mostrado en este sitio es propiedad de VEO CREATIVO S.A.C  o de sus aliados. Está prohibida su reproducción o uso sin autorización previa por escrito.</p>
+        <p><strong>2. Propiedad intelectual</strong><br>Todo el contenido (textos, imágenes, gráficos...) mostrado en este sitio es propiedad de Tesco S.A.C  o de sus aliados. Está prohibida su reproducción o uso sin autorización previa por escrito.</p>
         <p><strong>3. Precios y servicios</strong><br>Los precios, promociones o características de los productos pueden cambiar sin previo aviso. El hecho de ver un producto en esta web no implica obligación contractual hasta que el cliente haya recibido una cotización formal o haya realizado un pago aprobado.</p>
-        <p><strong>4. Limitación de responsabilidad</strong><br>VEO CREATIVO S.A.C. no garantiza que el sitio esté libre de errores. o interrupciones, aunque tomamos medidas técnicas para mantenerlo seguro y funcional. El uso de esta página es bajo responsabilidad del usuario.</p>
+        <p><strong>4. Limitación de responsabilidad</strong><br> Tesco S.A.C. no garantiza que el sitio esté libre de errores. o interrupciones, aunque tomamos medidas técnicas para mantenerlo seguro y funcional. El uso de esta página es bajo responsabilidad del usuario.</p>
         <p><strong>5. Enlaces externos</strong><br>Podemos incluir enlaces a sitios de terceros. No somos responsables por el contenido, políticas o prácticas de esas páginas externas.</p>
         <p><strong>6. Protección de datos personales</strong><br>La información recolectada mediante formularios  o medios de contacto se maneja con total confidencialidad y bajo las leyes de protección de datos vigentes en Perú. No compartimos ni vendemos tus datos a terceros.</p>
-        <p><strong>7. Contacto</strong><br>Para consultas legales, comerciales o relacionadas a estos términos, puede escribirnos a:<br><br>📧 <strong>contacto@veocreativo.com</strong><br></p>
-        <p><strong>8. Modificaciones</strong><br>VEO CREATIVO S.A.C. se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán publicadas en esta misma sección y entrarán en vigencia desde su publicación.</p>
+        <p><strong>7. Contacto</strong><br>Para consultas legales, comerciales o relacionadas a estos términos, puede escribirnos a:<br><br>📧 <strong>contacto@tesco.com</strong><br></p>
+        <p><strong>8. Modificaciones</strong><br>Tesco S.A.C. se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán publicadas en esta misma sección y entrarán en vigencia desde su publicación.</p>
       `
     },
     privacy: {
       title: 'Política de Privacidad',
       date: 'Última actualización: Junio de 2025',
       content: `
-        <p>En VEO CREATIVO S.A.C. respetamos tu privacidad. Toda la información personal recopilada será utilizada únicamente con fines administrativos...</p>
+        <p>En Tesco S.A.C. respetamos tu privacidad. Toda la información personal recopilada será utilizada únicamente con fines administrativos...</p>
         <p>No compartimos tu información con terceros salvo que sea requerido por ley o por mandato judicial.</p>
         <p>Utilizamos medidas de seguridad técnicas y organizativas para proteger tus datos.</p>
-        <p>Tienes derecho a acceder, corregir, actualizar o eliminar tus datos personales. Puedes ejercer estos derechos escribiendo a contacto@veocreativo.com con el asunto: “Protección de Datos”.</p>
+        <p>Tienes derecho a acceder, corregir, actualizar o eliminar tus datos personales. Puedes ejercer estos derechos escribiendo a contacto@tesco.com con el asunto: “Protección de Datos”.</p>
       `
     },
     cookies: {
